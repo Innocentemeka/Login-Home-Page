@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  height: 100vh;
+  width: 100vh;
+}
+
+.container {
+  display: flex;
+  width: 1440px;
+  height: 810px;
+  background: #F7F8FA;
+}
+
+.header {
+  width: 74px;
+  height: 810px;
+  border-right: 1px solid #E2E7EE;
+  background-color: #fff;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-logo img {
+  width: 40px;
+  height: 25px;
+  margin: 20px 0 120px 17px;
+}
+
+.nav_items {
+  padding: 0;
+  position: relative;
+}
+
+.nav-link img {
+  width: 18px;
+  height: 18px;
+  margin: 20px 28px;
+}
+
+.logout-icon img {
+  width: 46px;
+  height: 46px;
+  margin: 92px 0 0 14px;
+}
+
+.line {
+  position: absolute;
+  width: 3px;
+  height: 30px;
+  background: #FFA101;
+  right: 0;
+  top: 0;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+}
+
+.title {
+  margin: 18px 30px;
+}
+
+.title h1 {
+  color: #11141A;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  line-height: normal
+}
+
+.title p {
+  color: #7F8FA4;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.stats-items {
+  display: flex;
+  justify-content: space-between;
+  margin: 18px 28px;
+}
+
+.quick-stats h1 {
+  color: #354052;
+  margin: 0 28px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.quick-stats .stats {
+  width: 210px;
+  height: 110px;
+  padding: 28px;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.stats p {
+  color: #354052;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.stats h2 {
+  color: #11141A;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.stats img {
+  width: 18px;
+  height: 10px;
+}
+
+.tabs {
+  position: relative;
+  display: flex;
+  width: 930px;
+  height: 41px;
+  border-bottom: 1px solid #E2E7EE;
+  margin: 0px 28px;
+}
+
+.tabs li {
+  color: #BBC5D5;
+  margin: 0 47px 0 0;
+  list-style: none;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.tab-line {
+  position: absolute;
+  width: 63px;
+  height: 3px;
+  background: #FFA101;
+  left: 5px;
+  bottom: 0;
+  transition: all 0.3s ease;
+}
+
+.bookings {
+  width: 930px;
+  display: flex;
+  justify-content: space-between;
+  margin: 18px 28px;
+}
+
+.booking-items {
+  width: 290px;
+  height: 208px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 22px 19px;
+}
+
+.booking-items h1 {
+  color: #11141A;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.booking-items p {
+  color: #7F8FA4;
+  font-size: 12px;
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+
+.booking-items h3 {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #354052;
+}
+
+.date-time {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.date {
+  margin-right: 54px;
+}
+
+.date p {
+  color: #7F8FA4;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.date h2 {
+  color: #354052;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.time p {
+  color: #7F8FA4;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.time h2 {
+  color: #354052;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+hr {
+  color: #EAEAEA;
+  margin-bottom: 15px;
+}
+
+.accept-decline {
+  display: flex;
+}
+
+.accept-decline li {
+  list-style: none;
+  color: #BBC5D5;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 30px 0 0;
+  cursor: pointer;
+}
+
+.user-profile {
+  width: 380px;
+  height: 810px;
+  background: #fff;
+  border-left: 1px solid #E2E7EE;
+}
+
+.searchBox {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 56px;
+}
+
+.searchInput {
+  width: 250px;
+  height: 44px;
+  border: none;
+  display: flex;
+  margin: 0 32px 0;
+  justify-content: center;
+  align-items: center;
+  background: #F7F8FA;
+  border-radius: 30px;
+}
+
+.searchInput input {
+  width: 70%;
+  height: 18px;
+  color: #000;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  font-weight: 400;
+  padding: 10px;
+  border-left: 1px solid #BBC5D5;
+  background: #F7F8FA;
+}
+
+.searchInput img {
+  width: 18px;
+  height: 18px;
+  color: #354052;
+  align-self: center;
+  margin-right: 15px;
+}
+
+.notificationIcon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 22px;
+  background: #F7F8FA;
+}
+
+.notificationIcon img {
+  width: 15px;
+  height: 18px;
+  color: #354052;
+}
+
+.userInfo {
+  display: flex;
+  margin-bottom: 26px;
+}
+
+.userName {
+  margin: 0 32px 0px;
+}
+
+.userName h4 {
+  color: #11141A;
+  font-size: 22px;
+  margin-bottom: 3px;
+  font-weight: 400;
+}
+
+.userName h1 {
+  color: #11141A;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.userName p {
+  color: #7F8FA4;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+}
+
+.userProfilePic img {
+  width: 90px;
+  height: 100px;
+}
+
+.userBioLink {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.userBioLink .searchBox {
+  width: 217px;
+  height: 44px;
+  padding-left: 10px;
+  display: flex;
+  border-radius: 22px;
+  margin: 0 27px 0px;
+  justify-content: center;
+  align-items: center;
+  background: #F7F8FA;
+}
+
+.userBioLink .searchBox input {
+  height: 18px;
+  width: 70%;
+  border: none;
+  outline: none;
+  margin-right: 10px;
+  color: #354052;
+  background: #F7F8FA;
+  border-right: 1px solid #BBC5D5;
+}
+
+.userBioLink .searchBox img {
+  width: 18px;
+  height: 18px;
+}
+
+.userBioLink button {
+  width: 90px;
+  height: 44px;
+  border: none;
+  border-radius: 50px;
+  color: #322A7D;
+  background: #BBC5D5;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.upgradeAcc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.upgrade {
+  width: 324px;
+  height: 140px;
+  display: flex;
+  border-radius: 20px;
+  align-items: center;
+  background: #1C1479;
+}
+
+.upgradeText {
+  margin: 25px 70px 25px 25px;
+}
+
+.upgradeText h1 {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  line-height: normal;
+}
+
+.upgradeText p {
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.upgradeIcon img {
+  width: 60px;
+  height: 60px;
+}
+
+.remniderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.remindersInfo {
+  width: 324px;
+  height: 140px;
+  align-items: center;
+  background: #fff;
+}
+
+.remidersText {
+  display: flex;
+  justify-content: space-between;
+}
+
+.remidersText h1 {
+  color: #11141A;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.remidersText a {
+  color: #FFA101;
+  font-size: 12px;
+  text-decoration: none;
+  margin-top: 3px;
+  font-weight: 700;
+}
+
+.remidersText a img {
+  width: 6px;
+  height: 10px;
+  margin-left: 8px;
+}
+
+.reminder {
+  display: flex;
+  align-items: center;
+}
+
+.reminder img {
+  width: 48px;
+  height: 48px;
+  margin: 15px 15px 10px 0;
+}
+
+.reminder .text h4 {
+  color: #354052;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+.reminder .text p {
+  color: #7F8FA4;
+  font-size: 12px;
+  font-weight: 400;
+}

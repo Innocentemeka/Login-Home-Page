@@ -9,7 +9,7 @@ form.addEventListener('submit', (e) => {
   const authen = auth(username, password)
 
   if (authen) {
-    window.location.href = "page2.html";
+    window.location.href = "home.html";
     alert('Login Successfully')
   } else {
     alert('Wrong username/password');

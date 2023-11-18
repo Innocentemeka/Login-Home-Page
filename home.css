@@ -14,14 +14,15 @@ body {
 
 .container {
   display: flex;
-  width: 1440px;
-  height: 810px;
+  justify-content: space-between;
+  width: 1220px;
+  height: 760px;
   background: #F7F8FA;
 }
 
 .header {
   width: 74px;
-  height: 810px;
+  height: 760px;
   border-right: 1px solid #E2E7EE;
   background-color: #fff;
 }
@@ -34,7 +35,7 @@ body {
 .nav-logo img {
   width: 40px;
   height: 25px;
-  margin: 20px 0 120px 17px;
+  margin: 15px 0 120px 17px;
 }
 
 .nav_items {
@@ -51,7 +52,7 @@ body {
 .logout-icon img {
   width: 46px;
   height: 46px;
-  margin: 92px 0 0 14px;
+  margin: 70px 0 0 14px;
 }
 
 .line {
@@ -63,6 +64,10 @@ body {
   top: 0;
   margin-top: 15px;
   transition: all 0.3s ease;
+}
+
+.home {
+  width: 785px;
 }
 
 .title {
@@ -84,12 +89,6 @@ body {
   line-height: normal;
 }
 
-.stats-items {
-  display: flex;
-  justify-content: space-between;
-  margin: 18px 28px;
-}
-
 .quick-stats h1 {
   color: #354052;
   margin: 0 28px;
@@ -98,18 +97,24 @@ body {
   line-height: normal;
 }
 
+.stats-items {
+  display: flex;
+  margin: 18px 15px;
+}
+
 .quick-stats .stats {
-  width: 210px;
+  width: 180px;
   height: 110px;
-  padding: 28px;
-  border-radius: 5px;
+  padding: 20px;
+  border-radius: 10px;
   background: #fff;
 }
 
 .stats p {
   color: #354052;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 10px;
   line-height: normal;
 }
 
@@ -128,10 +133,11 @@ body {
 .tabs {
   position: relative;
   display: flex;
-  width: 930px;
+  width: 754px;
   height: 41px;
   border-bottom: 1px solid #E2E7EE;
-  margin: 0px 28px;
+  margin: 0px 15px;
+ 
 }
 
 .tabs li {
@@ -155,18 +161,18 @@ body {
 }
 
 .bookings {
-  width: 930px;
+  width: 770px;
   display: flex;
   justify-content: space-between;
-  margin: 18px 28px;
+  margin: 20px 15px;
 }
 
 .booking-items {
   width: 290px;
-  height: 208px;
+  height: 200px;
   background: #fff;
-  border-radius: 15px;
-  padding: 22px 19px;
+  border-radius: 10px;
+  padding: 12px 15px;
 }
 
 .booking-items h1 {
@@ -242,8 +248,8 @@ hr {
 }
 
 .user-profile {
-  width: 380px;
-  height: 810px;
+  width: 350px;
+  height: 760px;
   background: #fff;
   border-left: 1px solid #E2E7EE;
 }
@@ -251,7 +257,7 @@ hr {
 .searchBox {
   display: flex;
   margin-top: 20px;
-  margin-bottom: 56px;
+  margin-bottom: 40px;
 }
 
 .searchInput {
@@ -285,6 +291,7 @@ hr {
   color: #354052;
   align-self: center;
   margin-right: 15px;
+  cursor: pointer;
 }
 
 .notificationIcon {
@@ -295,17 +302,19 @@ hr {
   align-items: center;
   border-radius: 22px;
   background: #F7F8FA;
+  cursor: pointer;
 }
 
 .notificationIcon img {
   width: 15px;
   height: 18px;
   color: #354052;
+  cursor: pointer;
 }
 
 .userInfo {
   display: flex;
-  margin-bottom: 26px;
+  margin-bottom: 15px;
 }
 
 .userName {
@@ -328,8 +337,9 @@ hr {
 
 .userName p {
   color: #7F8FA4;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 400;
+  margin-right: 7px;
   line-height: 15px;
 }
 
@@ -369,6 +379,7 @@ hr {
 .userBioLink .searchBox img {
   width: 18px;
   height: 18px;
+  cursor: pointer;
 }
 
 .userBioLink button {
@@ -380,6 +391,7 @@ hr {
   background: #BBC5D5;
   font-size: 12px;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .upgradeAcc {
@@ -387,6 +399,7 @@ hr {
   justify-content: center;
   align-items: center;
   margin-bottom: 40px;
+  margin-left: 20px;
 }
 
 .upgrade {
@@ -430,6 +443,7 @@ hr {
 .remindersInfo {
   width: 324px;
   height: 140px;
+  padding: 10px;
   align-items: center;
   background: #fff;
 }
